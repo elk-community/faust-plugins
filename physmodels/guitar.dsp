@@ -1,0 +1,9 @@
+declare name "guitar_midi";
+declare description "Ready-to-use MIDI-enabled steel strings acoustic guitar physical model with built-in UI.";
+declare license "MIT";
+declare copyright "using modules from FAUST physical modeling library, (c)Romain Michon et al., CCRMA (Stanford University), GRAME";
+
+import("stdfaust.lib");
+
+process = pm.guitar_ui_MIDI <: _,_;
+
